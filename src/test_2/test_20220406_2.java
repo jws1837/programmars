@@ -1,5 +1,8 @@
 package test_2;
 
+import java.util.Arrays;
+import java.util.Collections;
+
 //제일 작은 수 제거하기  
 /**
  * 정수를 저장한 배열, arr 에서 가장 작은 수를 제거한 배열을 리턴하는 함수, solution을 완성해주세요. 
@@ -19,7 +22,7 @@ public class test_20220406_2 {
 	// 2. 각각의 요소를 비교해서 가장작은 걸를 선택하는 방식. 보통의 나라면 2번째 방법을 많이 씀.
 	// 3. 버블정렬 이용해서 작은순서대로 배열을 정렬시키고 첫번째 요소를 제거한 배열을 복사하는 방식.
 	// 4. 리스트를 만들어서 , list.toArray()를 쓰는 것.
-
+	
 	public int[] solution(int[] arr) {
 		if (arr.length <= 1) {
 			int[] answer = { -1 };
@@ -63,7 +66,7 @@ public class test_20220406_2 {
 		}
 		System.out.println("생성자" + count + "끝");
 	}
-
+	
 	public static void main(String[] args) {
 		test_20220406_2 test = new test_20220406_2();
 		int[] arr = { 3,2, 4, 5 };
