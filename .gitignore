@@ -1,0 +1,15 @@
+.project
+.idea
+**/*.iml
+**/target
+target/
+.settings
+.classpath
+.cache-main
+.cache-tests
+.toDelete
+.factorypath
+velocity.log
+felix-cache/
+bin/
+.mvn/wrapper/MavenWrapperDownloader.java
