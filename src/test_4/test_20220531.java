@@ -16,9 +16,6 @@ package test_4;
  * n은 1 이상, 25이하인 자연수입니다.
  **/
 public class test_20220531 {
-    private enum flag{
-        small,big,blank
-    }
     public String solution(String s, int n) {
         char[] temp = new char[s.length()];
         int flag = 0; //0소문자, 1대문자, 2공백
