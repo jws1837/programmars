@@ -1,4 +1,4 @@
-package test;
+package test_202204;
 
 //최대공약수와 최소공배수
 //2022-04-04 13:41 start!; 14:36 end 

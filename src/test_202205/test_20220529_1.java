@@ -1,4 +1,4 @@
-package test_4;
+package test_202205;
 
 //이상한 문자 만들기
 /**

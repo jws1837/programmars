@@ -1,4 +1,4 @@
-package test;
+package test_202204;
 
 //문제 콜라츠 추측
 //2022-04-04 13:15 start!; 13:36 end 

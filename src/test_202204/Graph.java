@@ -1,4 +1,4 @@
-package test_3;
+package test_202204;
 
 //Java program for Kruskal's algorithm to
 //find Minimum Spanning Tree of a given

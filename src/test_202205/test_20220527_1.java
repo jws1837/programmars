@@ -1,4 +1,4 @@
-package test_4;
+package test_202205;
 
 //자연수 뒤집어 배열로 만들기 
 /**

@@ -1,4 +1,4 @@
-package test_4;
+package test_202205;
 
 //약수의 합
 /**

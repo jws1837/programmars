@@ -1,4 +1,4 @@
-package test_4;
+package test_202205;
 
 //자릿수 더하기 
 /**
