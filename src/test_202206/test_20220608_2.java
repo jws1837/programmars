@@ -22,12 +22,12 @@ package test_202206;
 public class test_20220608_2 {
     public boolean solution(String[] phone_book) {
         boolean answer = true;
-        for (int i = 0; i < (phone_book.length / 2) + 1; i++) {
+        for (int i = 0; i < phone_book.length / 2 + 1; i++) {
             for (int j = 0; j < phone_book.length; j++) {
                 if (j == i) {
                     continue;
                 }
-                answer = check(phone_book[j], phone_book[i]) && check(phone_book[i], phone_book[j]);
+                answer = check(phone_book[i], phone_book[j]);
                 if (!answer) {
                     return answer;
                 }
@@ -38,8 +38,23 @@ public class test_20220608_2 {
     }
 
     private boolean check(String a, String b) {
-        return a.startsWith(b) ? false : true;
+        String convert = "";
+        if (a.length() > b.length()) {
+            convert = a.substring(0, b.length());
+            if (convert.equals(b)) {
+                return false;
+            }
+        } else {
+            convert = b.substring(0, a.length());
+            if (convert.equals(a)) {
+                return false;
+            }
+        }
+        return true;
+
     }
+
+
 
 }
 
