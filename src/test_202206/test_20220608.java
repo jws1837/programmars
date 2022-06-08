@@ -12,17 +12,28 @@ package test_202206;
  * n은 길이 10,000이하인 자연수입니다.
  **/
 public class test_20220608 {
+
     public String solution(int n) {
         char[] source = {'수', '박'};
         String answer = "";
 
         for (int i = 0; i < n; i++) {
-            int k = 0;
-            k = (i % 2 == 0) ? 0 : 1;
+            int k = (i % 2 == 0) ? 0 : 1;
             answer += source[k];
         }
         return answer;
     }
+
+
+    public String solution2(int n) {
+        StringBuffer sf = new StringBuffer();
+        for (int i = 1; i <= n; ++i) {
+            sf.append(i % 2 == 1 ? "수" : "박");
+        }
+        return sf.toString();
+    }
+
+
 }
 
 
