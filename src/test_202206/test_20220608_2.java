@@ -1,8 +1,9 @@
 package test_202206;
 //Lv2
-//2022-06-08 12:13 start 2022-06-08 12:34 end
-//효율성에서 탈락.
+//2022-06-08 12:13 start 2022-06-08 13:48 end
 //
+
+import java.util.Arrays;
 
 /**
  * 문제 설명
@@ -16,23 +17,18 @@ package test_202206;
  * <p>
  * 제한 사항
  * phone_book의 길이는 1 이상 1,000,000 이하입니다.
- * 각 전화번호의 길이는 1 이상 20 이하입니다.
+ * 각 전화번호의 길이는 1 이상 20 ㅡㅏ,이하입니다.
  * 같은 전화번호가 중복해서 들어있지 않습니다.
  **/
 public class test_20220608_2 {
     public boolean solution(String[] phone_book) {
         boolean answer = true;
-        for (int i = 0; i < phone_book.length / 2 + 1; i++) {
-            for (int j = 0; j < phone_book.length; j++) {
-                if (j == i) {
-                    continue;
-                }
-                answer = check(phone_book[i], phone_book[j]);
-                if (!answer) {
-                    return answer;
-                }
+        Arrays.sort(phone_book);
+        for (int i = 0; i < phone_book.length - 1; i++) {
+            answer = check(phone_book[i], phone_book[i + 1]);
+            if (!answer) {
+                return answer;
             }
-
         }
         return answer;
     }
@@ -53,7 +49,6 @@ public class test_20220608_2 {
         return true;
 
     }
-
 
 
 }
