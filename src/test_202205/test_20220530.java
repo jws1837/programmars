@@ -17,7 +17,7 @@ public class test_20220530 {
         List<Integer> divisorArray = getDivisor(n);
 
         int answer = 0;
-        for (Object temp : divisorArray) {
+        for (Integer temp : divisorArray) {
             answer += (int) temp;
         }
         return answer;
