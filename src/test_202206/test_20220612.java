@@ -14,12 +14,14 @@ import java.util.ArrayList;
  * 제한 조건
  * n은 2이상 1000000이하의 자연수입니다.
  **/
+
 public class test_20220612 {
+    //Todo 1. 소수의 개수를 반환하라.
 //Todo 1-1. 소수 구하는 함수.(api가 Math패키지에 있을 듯. 이건 추후 검색)
-//Todo 1-2 . 소수 구하는 함수. 나머지가 0인거 1과 자기자신 제외 1개면(count를 두고)  배열에 넣고, 2개이상이면 그냥 건너뛰기 .
+//Todo 1-2. 2의배수,3의배수로 나눌필요는 없는데,짝수는 다 제외 가능.
+//Todo 1-2. contains를 포함해야 하나?
 //>>대신 이건 시간복잡도는 n제곱으로 최악일 듯.
-//Todo 2. n은 2이상 100만이하 자연수
-//Todo 3.
+
 
     public int solution(int n) {
         int flag = 0;
@@ -35,19 +37,28 @@ public class test_20220612 {
     }
 
     private boolean getSosu(int n) {
+        if (n % 2 == 0) {
+            if (n == 2) {
+                return true;
+            }
+            return false;
+        }
         int flag = 0;
         for (int i = 2; i <= n; i++) {
             if (n % i == 0) {
                 flag++;
+                if (flag == 2) {
+                    return false;
+                }
             }
-
         }
         return flag == 1 ? true : false;
     }
 
     public static void main(String[] args) {
         test_20220612 test = new test_20220612();
-        int solution = test.solution(5);
+        boolean sosu = test.getSosu(1000000);
+        int solution = test.solution(1000000);
         System.out.println(solution);
 
     }
