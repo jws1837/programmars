@@ -18,6 +18,7 @@ public class test_20220613 {
         for (int i = 0; i < seoul.length; i++) {
             if (seoul[i].equals("Kim")) {
                 n = i;
+                break;
             }
         }
 
