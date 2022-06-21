@@ -38,16 +38,5 @@ public class test_20220621 {
 
         return answer;
     }
-
-
-    public static void main(String[] args) {
-        test_20220621 test = new test_20220621();
-        int[] dd = {3, 2, 6};
-
-        int[] solution = test.solution(dd, 10);
-        for (int i : solution) {
-            System.out.print("i = " + i);
-        }
-    }
 }
 
