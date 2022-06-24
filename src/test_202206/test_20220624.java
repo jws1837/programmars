@@ -3,6 +3,7 @@ package test_202206;
 //2022-06-24 16:13 start 2022-06-24 16:22 end
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -30,6 +31,9 @@ public class test_20220624 {
     for (int i = 0; i < list.size(); i++) {
       answer[i] = list.get(i);
     }
+
+//    Integer[] integers = list.toArray(new Integer[list.size()]);
+//    answer = Arrays.stream(integers).mapToInt(Integer::intValue).toArray();
 
     return answer;
   }
